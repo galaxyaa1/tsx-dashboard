@@ -1,0 +1,213 @@
+/* Base styles for sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #282b31;
+    color: #fff;
+    height: 100vh;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1; 
+}
+
+.sidebar-header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #1e1e1f;
+}
+
+.sidebar-logo {
+    width: 40px; 
+    height: auto; 
+}
+
+.sidebar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.user-pic {
+    width: 210px;
+    height: 40px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-item {
+    color: #fff;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar-item a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-icon {
+    margin-right: 10px;
+}
+
+.sidebar-item:hover {
+    background-color: #109c7e;
+}
+
+.sidebar-item-with-submenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.submenu-icon {
+    margin-left: auto;
+}
+
+.sidebar-submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.sidebar-item:hover .sidebar-submenu {
+    display: block;
+}
+
+.sidebar-subitem {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.sidebar-subitem a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar-subitem:hover {
+    background-color: #444;
+}
+
+.notification-dot {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+
+.sidebar-footer {
+    padding: 5px 10px;
+    font-size: 0.8em;
+    text-align: center;
+    color: #9b9b9b;
+    margin-top: -20px;
+    margin-right: 110px;
+    background-color: #1e1e1f;
+    width: 92%;
+}
+
+/* Media Queries */
+
+/* For tablets (width between 768px and 992px) */
+@media (max-width: 992px) {
+    .sidebar {
+        width: 200px; /* Reduce sidebar width */
+    }
+
+    .sidebar-header {
+        padding: 15px;
+    }
+
+    .sidebar-title {
+        font-size: 1.2rem; /* Adjust title size */
+    }
+
+    .user-pic {
+        width: 180px; 
+        height: 35px; 
+    }
+
+    .sidebar-item {
+        font-size: 1em; 
+    }
+
+    .notification-dot {
+        margin-left: 20px; 
+    }
+
+    .sidebar-footer {
+        margin-right: 60px;
+    }
+}
+
+/* For mobile devices (width less than 768px) */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; 
+        position: relative; 
+        height: auto; 
+        overflow: hidden; 
+    }
+
+    .sidebar-header {
+        padding: 10px;
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .sidebar-title {
+        font-size: 1rem; 
+        margin-left: 0; 
+    }
+
+    .user-info {
+        flex-direction: column; 
+    }
+
+    .user-pic {
+        width: 150px; 
+        height: auto; 
+    }
+
+    .sidebar-menu {
+        padding-top: 10px; 
+    }
+
+    .sidebar-item {
+        font-size: 0.9em; 
+        padding: 10px 15px; 
+    }
+
+    .notification-dot {
+        margin-left: 10px; 
+    }
+
+    .sidebar-footer {
+        margin-right: 20px; 
+        font-size: 0.7em; 
+    }
+}

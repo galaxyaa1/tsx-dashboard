@@ -1,0 +1,146 @@
+/* Base styles */
+.configurations {
+    margin-top: 50px;
+    margin-left: 300px; /* Adjust for sidebar */
+    margin-right: 30px; /* Adjust for navbar */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+}
+
+.branding-owner-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.branding, .owner {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 48%;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+input {
+    display: block;
+    width: 90%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.edit-button, .delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.edit-button {
+    color: #28a745;
+}
+
+.delete-button {
+    color: #dc3545;
+}
+
+.add-new-page {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.add-new-page:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+
+
+@media (max-width: 992px) {
+    .configurations {
+        margin-left: 20px; 
+        margin-right: 20px; 
+        width: calc(100% - 40px); 
+    }
+
+    .branding-owner-container {
+        flex-direction: column; 
+    }
+
+    .branding, .owner {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .configurations {
+        margin-left: 0; 
+        margin-right: 0; 
+        width: 100%; 
+        padding: 10px; 
+    }
+
+    h1 {
+        font-size: 20px; 
+    }
+
+    .branding-owner-container {
+        flex-direction: column; 
+    }
+
+    .branding, .owner {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    .input-group input {
+        width: 100%; 
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px; 
+    }
+}

@@ -1,0 +1,62 @@
+.navbar {
+    width: calc(100% - 250px); /* Adjust the width to account for the sidebar */
+    background-color: #9d9ea0;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 250px; /* Position it after the sidebar */
+    z-index: 1000;
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar1 {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 20px;
+}
+
+.language-selector select {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 20px;
+    background-color: #fff;
+    color: #000;
+}
+
+.right-content {
+    text-align: right;
+}
+
+.greeting {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+    margin-right: 50px;
+}
+
+.greeting-icon {
+    margin-right: 10px;
+}
+
+.datetime {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-right: 40px;
+}
+
+.date, .time {
+    display: inline-block;
+}
